@@ -13,10 +13,11 @@ int main()
     step=20;    /* step value */
 
     fahr=lower;
+    printf("Fahrenheit Celsius\n"); /* Heading abve the table */
     while (fahr<=upper)
     {
         celsius=5.0/9.0*(fahr-32);
-        printf("%3.0f\t%6.2f\n",fahr,celsius); /* justification */
+        printf("%3.0f\t%10.2f\n",fahr,celsius); /* justification */
         fahr=fahr+step;
     }
     
