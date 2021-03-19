@@ -4,11 +4,11 @@
 
 int main()
 {
-    long count=0;
+    double count=0;
     char x=getchar();            /* let x be EOF */
 
-    while (getchar()!= x)
-        ++count;
-    printf("No.of characters: %ld\n",count);
+    for (count;getchar()!=x;++count)
+        ;
+    printf("No.of characters: %.0f\n",count);
 
 }
